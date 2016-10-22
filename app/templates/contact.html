@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block body %}
+<div style=' background-color:#0b4c4c; overflow:hidden;'>
+  <div class="container">
+      <div class="row">
+        <article class="span8">
+
+         <h3>Contact Us</h3>
+<form method="post">
+    {% csrf_token %}
+    {{ form }}
+    <div class="form-actions">
+      <button type="submit">Send</button>
+    </div>
+</form>
+</article>
+        <article class="span4">
+          <h3>Contact info</h3>
+          <div class="map">
+            <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:350px;width:350px;'><div id='gmap_canvas' style='height:350px;width:350px;'></div><div><small><a href="http://embedgooglemaps.com">embed google maps</a></small></div><div><small><a href="https://termsofusegenerator.net">terms of use generator</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(28.6674984667992,77.42071178598327),mapTypeId: google.maps.MapTypeId.TERRAIN};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(28.674158, 77.421336)});infowindow = new google.maps.InfoWindow({content:'<strong>Spring Dale School</strong><br>b block,patel nagar 2,ghaziabad, india<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+          </div>
+          <address class="address-1">
+          <strong>BS 2<br>
+          Patel Nagar 2<br>
+          Greater Noida</strong>
+          <div class="overflow">
+            <span>Telephone:</span>0120 4560078<br>
+            <span>E-mail:</span> <a href="contact" class="mail-1">sds_gzb@rediffmail.com</a><br>
+
+          </address>
+        </article>
+      </div>
+    </div>
+  </div>
+
+</div>
+{% endblock %}

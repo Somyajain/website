@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring Dale School,Greater Noida</title>
+    {% load staticfiles %}
+    <meta charset='utf-8'>
+    <link rel='icon' href='{% static 'img/topim.png' %}' type='image/x-icon'>
+    <link rel='shortcut icon' href='{% static 'img/topim.png' %}' type='image/x-icon'>
+    <link rel='stylesheet' href='{% static 'css/bootstrap.css' %}' type='text/css' media='screen'>
+    <link rel='stylesheet' href='{% static 'css/responsive.css' %}' type='text/css' media='screen'>
+    <link rel='stylesheet' href='{% static 'css/style.css' %}' type='text/css' media='screen'>
+    <link rel='stylesheet' href='{% static 'css/touchTouch.css' %}' type='text/css' media='screen'>
+    <link rel='stylesheet' href='{% static 'css/kwicks-slider.css' %}' type='text/css' media='screen'>
+    <link rel='stylesheet' href='{% static 'css/custom.css' %}' type='text/css' media='screen'>
+    <link rel='stylesheet' href='{% static 'css/teachers.css' %}' type='text/css' media='screen'>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <script src='{% static 'js/jquery.js' %}'></script>
+    <script src='{% static 'js/superfish.js' %}'></script>
+    <script src='{% static 'js/jquery.flexslider-min.js' %}'></script>
+    <script src='{% static 'js/jquery.kwicks-1.5.1.js' %}'></script>
+    <script src='{% static 'js/jquery.easing.1.3.js' %}'></script>
+    <script src='{% static 'js/jquery.cookie.js' %}'></script>
+    <script src='{% static 'js/touchTouch.jquery.js' %}'></script>
+    <script>
+    if ($(window).width() > 1024) {
+        document.write('<' + 'script src="{% static "js/jquery.preloader.js" %}"></' + 'script>');
+    }
+    </script>
+    <script>
+    jQuery(window).load(function () {
+        $x = $(window).width();
+        if ($x > 1024) {
+            jQuery('#content .row').preloader();
+        }
+        jQuery('.magnifier').touchTouch();
+        jQuery('.spinner').animate({
+            'opacity': 0
+        }, 1000, 'easeOutCubic', function () {
+            jQuery(this).css('display', 'none')
+        });
+    });
+    </script>
+  </head>
+<body>
+
+  {% block header %}
+
+  <header>
+    <div class='container clearfix'>
+      <div class='row'>
+        <div class='span12'>
+          <div class='navbar navbar_'>
+            <div class='container'>
+              <h1 class='brand brand_'><a href='/'><img alt='' src='{% static 'img/logo.png' %}'> </a></h1>
+              <a class='btn btn-navbar btn-navbar_' data-toggle='collapse' data-target='.nav-collapse_'>Menu <span class='icon-bar'></span> </a>
+              <div class='nav-collapse nav-collapse_  collapse'>
+                <ul class='nav sf-menu'>
+                  <li class='active'><a href='/'>Home</a></li>
+                  <li class='sub-menu'><a href='/overview'>About Us</a>
+                    <ul>
+                      <li><a href='/overview'>Overview </a></li>
+                      <li><a href='/mission'>Mission</a></li>
+                      <li><a href='/vision'>Vision</a></li>
+                    </ul>
+                  </li>
+                  <li><a href='/gallery'>Gallery</a></li>
+                  <li><a href='/contact'>Contact</a></li>
+                  <li><a href='/team'>Team</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  {% endblock %}
+
+{% block body %}
+
+{% endblock %}
+{% block footer %}
+
+<footer>
+  <div class='row ' style='text-align: center;'>
+
+
+    <div class='span4' style='padding: 51px 40px 40px;'>
+    <div class='privacy pull-left'> <a href='/'>www.mysds.in</a> </div>
+  </div>
+
+    <div class='span4' style='padding:0px'>
+    <img src='{% static 'img/footerlogo.jpg' %}' style="height:150px;"alt=''>
+  </div>
+    <div class='span4' style='padding: 51px 0 40px;'>
+    <ul class='list-social pull-right'>
+      <li><a class='icon-1' href='#'></a></li>
+      <li><a class='icon-2' href='#'></a></li>
+      <li><a class='icon-3' href='#'></a></li>
+      <li><a class='icon-4' href='#'></a></li>
+    </ul>
+  </div>
+
+
+
+</div>
+</footer>
+
+{% endblock %}
+<script src='{% static 'js/bootstrap.js' %}'></script>
+</body>
+</html>

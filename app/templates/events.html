@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block body %}
+<div style=' background-color:#0b4c4c; overflow:hidden;'>
+
+  <div class='container'>
+  <div class='block-slogan' >
+    <h2 style="text-decoration: underline;">Recent Events</h2></div>
+  </div>
+
+
+{% for n in events %}
+<div class='container'>
+  <div class='row'>
+    <div class='span12'>
+      <div class='col-md-12' >
+      <img  class="img-responsive" style="width:1300px; "src="{{ n.image.url }}" alt="" />
+    </div>
+
+
+  <span id='responsiveFlag'></span>
+  <div class='block-slogan'>
+    <h2>{{ n.heading|capfirst }}</h2>
+    <div>
+      <p style="font-size:19px;"><a href='#' class='link-1'>{{ n.date }}</a> <br/>{{ n.content|capfirst }} </p>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div> -
+{% endfor %}
+</div>
+
+
+{% endblock %}

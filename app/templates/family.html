@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block body %}
+<div style=' background-color:#0b4c4c; overflow:hidden;'>
+  <div class='container'>
+    <div class='row'>
+      <div class='span12'>
+ <img src='{% static 'img/team.jpg' %}' class="img-responsive" style="width:1300px;"alt=''></div>
+ </div>
+</div>
+
+
+<div class='row-1 ' >
+  <div class='container'>
+    <div class='row'>
+      <ul class='thumbnails thumbnails-1'>
+        <li class='span4'>
+          <div class='thumbnail thumbnail-1' >
+            <h3 class="colorchange" ><b>Mr. NemChand Jain</b></h3>
+            <img src='{% static 'img/face_1.jpg' %}' class="img-circle"alt=''>
+            <section> <strong>CHAIRMAN </strong>
+              </section>
+          </div>
+        </li>
+        <li class='span4'>
+          <div class='thumbnail thumbnail-1'>
+            <h3 class="colorchange" ><b>Mr. Rakesh Jain</b></h3>
+            <img src='{% static 'img/dir.jpg' %}' class="img-circle"alt=''>
+            <section> <strong>DIRECTOR  </strong>
+              </section>
+          </div>
+        </li>
+        <li class='span4'>
+          <div class='thumbnail thumbnail-1'>
+            <h3 class="colorchange" ><b>Mrs. Renu Jain</b></h3>
+            <img src='{% static 'img/princi.jpg' %}' class="img-circle"alt=''>
+            <section> <strong>PRINCIPAL </strong>
+              </section>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class='row-1 ' style=' background-color:#0b4c4c; overflow:hidden;'>
+  <div class='container'>
+    <div class='row'>
+      <ul class='thumbnails thumbnails-1'>
+        <li class='span4'>
+          <div class='thumbnail thumbnail-1' >
+            <h3  ><b>Mrs. Deepa Singh</b></h3>
+            <img src='{% static 'img/dbranch.jpg' %}' class="img-circle"alt=''>
+            <section> HM, B Block branch
+              </section>
+          </div>
+        </li>
+        <li class='span4'>
+          <div class='thumbnail thumbnail-1'>
+            <h3  ><b>Mr. Aman Garg</b></h3>
+            <img src='{% static 'img/bbranch.jpg' %}' class="img-circle"alt=''>
+            <section> HM, Greater Noida branch
+              </section>
+          </div>
+        </li>
+        <li class='span4'>
+          <div class='thumbnail thumbnail-1'>
+            <h3  ><b>Ms. Anu Singhal</b></h3>
+            <img src='{% static 'img/cbranch.jpg' %}' class="img-circle"alt=''>
+            <section> HM, C Block branch
+              </section>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div style=' background-color:#0b4c4c; overflow:hidden;'>
+<!-- <h2>{{ n.heading|capfirst }}</h2> -->
+<!-- <a href="img/image-blank.png" class="magnifier"> -->
+{% for n in teacher %}
+<div class="responsive">
+ <div class="img">
+
+     <img src="{{ n.Image.url }}" alt="Trolltunga Norway" width="300" height="200">
+
+   <div class="desc">{{ n.Name|capfirst }}</div>
+ </div>
+</div>
+
+{% endfor %}
+</div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block body %}
+<!--'class='bg-content'-->
+
+<div style=' background-color:#0b4c4c; overflow:hidden;'>
+  <div class='container'>
+    <div class='row'>
+      <div class='span12'>
+        <div class='flexslider'>
+          <ul class='slides'>
+            <li> <img src='{% static 'img/slide-1.jpg' %}' alt=''> </li>
+            <li> <img src='{% static 'img/slide-2.jpg' %}' alt=''> </li>
+            <li> <img src='{% static 'img/slide-3.jpg' %}' alt=''> </li>
+            <li> <img src='{% static 'img/slide-4.jpg' %}' alt=''> </li>
+            <li> <img src='{% static 'img/slide-5.jpg' %}' alt=''> </li>
+          </ul>
+        </div>
+        <span id='responsiveFlag'></span>
+        <div class='block-slogan'>
+          <h2>Welcome!</h2>
+          <div>
+            <p><a href='' class='link-1'>Spring Dale School</a> is committed to creating and maintaining a trusting and caring environment where teaching and learning are exciting and students embark on a life long journey of learning.Young minds are impressionable -What they learn, they follow the same. If good values are imbibed at the right time, then a child becomes spiritually, morally and intellectually blessed. They not only become treasures of society but they create a hope for Utopia. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id='content' class='content-extra'>
+    <div class='row-1'>
+      <div class='container'>
+        <div class='row'>
+          <ul class='thumbnails thumbnails-1'>
+            <li class='span4'>
+              <div class='thumbnail thumbnail-1'>
+                <h3><b>Academics</b></h3>
+                <img src='{% static 'img/page1-img1.jpg' %}' alt=''>
+                <section> <strong>Teaching at Spring Dale School aims at concept and skill </strong>
+                  <p>development rather than mere acquisition of knowledge. Our system makes the student central to the learning structure.</p>
+                  <a href='overview.html' class='btn btn-1'>Read More</a> </section>
+              </div>
+            </li>
+            <li class='span4'>
+              <div class='thumbnail thumbnail-1'>
+                <h3><b>Our School</b></h3>
+                <img src='{% static 'img/page1-img2.jpg' %}' alt=''>
+                <section> <strong>Established in 2000 Spring Dale School is an English  </strong>
+                  <p>medium co-educational School affiliated to the Central Board of Secondary Education (C.B.S.E.).SDS is the beginning of a lifelong adventure known as learning.  </p>
+                  <a href='overview.html' class='btn btn-1'>Read More</a> </section>
+              </div>
+            </li>
+            <li class='span4'>
+              <div class='thumbnail thumbnail-1'>
+                <h3><b>Extra-Curricular</b></h3>
+                <img src='{% static 'img/page1-img3.jpg' %}' alt=''>
+                <section> <strong>SDS complements a strong academic foundation </strong>
+                  <p>with a rich selection of co-curricular activities designed to enhance a student's all round development</p>
+                  <a href='gallery.html' class='btn btn-1'>Read More</a> </section>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class='container'>
+      <div class='row'>
+        <article class='span6'>
+          <h3> Infrastructure</h3>
+          <div class='wrapper'>
+            <div class='imagetextontop'>
+             <figure class='img-indent'><img src='{% static 'img/page1-img5.jpg' %}' alt=''></figure><h2 class='specialone'><span>Explore Us</h2>
+
+            </div>
+            <div class='inner-1 overflow extra'>
+              <div class='txt-1'>Spring Dale School is spread over a campus of about two acres. The junior and senior blocks are built around a large playground and open assembly place with two national level basketball courts.</div>
+              All classrooms and staffrooms of the School are equipped with Air Conditioners to maintain ambient temperature at all times.
+
+              <div class='border-horiz'></div>
+              <div class='overflow'>
+                <ul class='list list-pad'>
+                  <li><a href='overview.html'>3D in Education</a></li>
+                  <li><a href='overview.html'>Classrooms</a></li>
+                  <li><a href='overview.html'>Security</a></li>
+                  <li><a href='overview.html'>Computing Facilities</a></li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class='span6'>
+          <h3>Latest Events</h3>
+          <ul class='list-photo'>
+            <li><a href='{% static 'img/image-blank.png' %}' class='magnifier'><img src='{% static 'img/page1-img6.jpg' %}' alt=''></a></li>
+            <li><a href='{% static 'img/image-blank.png' %}' class='magnifier'><img src='{% static 'img/page1-img7.jpg' %}' alt=''></a></li>
+            <li><a href='{% static 'img/image-blank.png' %}' class='magnifier'><img src='{% static 'img/page1-img8.jpg' %}' alt=''></a></li>
+            <li class='last'><a href='{% static 'img/image-blank.png' %}' class='magnifier'><img src='{% static 'img/page1-img9.jpg' %}' alt=''></a></li>
+            <li><a href='{% static 'img/image-blank.png' %}' class='magnifier'><img src='{% static 'img/page1-img10.jpg' %}' alt=''></a></li>
+            <li><a href='{% static 'img/image-blank.png' %}' class='magnifier'><img src='{% static 'img/page1-img11.jpg' %}' alt=''></a></li>
+            <li><a href='{% static 'img/image-blank.png' %}' class='magnifier'><img src='{% static 'img/page1-img12.jpg' %}' alt=''></a></li>
+            <li class='last'><a href='{% static 'img/image-blank.png' %}' class='magnifier'><img src='{% static 'img/page1-img13.jpg' %}' alt=''></a></li>
+            <li><a href='{% static 'img/image-blank.png' %}' class='magnifier'><img src='{% static 'img/page1-img14.jpg' %}' alt=''></a></li>
+            <li><a href='{% static 'img/image-blank.png' %}' class='magnifier'><img src='{% static 'img/page1-img15.jpg' %}' alt=''></a></li>
+            <li><a href='{% static 'img/image-blank.png' %}' class='magnifier'><img src='{% static 'img/page1-img16.jpg' %}' alt=''></a></li>
+            <li class='last'><a href='{% static 'img/image-blank.png' %}' class='magnifier'><img src='{% static 'img/page1-img17.jpg' %}' alt=''></a></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+{% endblock %}
